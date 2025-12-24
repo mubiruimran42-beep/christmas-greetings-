@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Merry Christmas from Granny Sigrid School 🎄</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff8e1; /* light warm background */
+      color: #333;
+      overflow-x: hidden;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      background: #c0392b; /* Christmas red */
+      color: #fff;
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #27ae60; /* Christmas green */
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 2em;
+      line-height: 1.6;
+      color: #8e44ad; /* festive purple/goldish tone for text */
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 1em;
+      color: #b7950b; /* gold color */
+      font-weight: bold;
+    }
+
+    .snowflake {
+      position: absolute;
+      color: #fff;
+      font-size: 2em;
+      animation: fall 10s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10%); }
+      100% { transform: translateY(110vh); }
+    }
+  </style>
+</head>
+<body>
+  <header>🎁 Granny Sigrid Kindergarten & Primary School 🎁</header>
+
+  <h1>🎄 Merry Christmas! 🎄</h1>
+  <p>
+    Warm greetings from Granny Sigrid School!  
+    We wish you a joyful holiday season filled with love, laughter, and happiness.  
+    Thank you for being part of our school family — may this Christmas bring you peace and countless blessings!
+  </p>
+
+  <footer>— Granny Sigrid School, Kasangati-Kazinga Zone</footer>
+
+  <!-- Falling snowflakes -->
+  <script>
+    for(let i=0; i<30; i++){
+      const flake = document.createElement('div');
+      flake.classList.add('snowflake');
+      flake.textContent = '❄';
+      flake.style.left = Math.random() * 100 + 'vw';
+      flake.style.animationDuration = 5 + Math.random()*5 + 's';
+      flake.style.fontSize = 10 + Math.random()*20 + 'px';
+      document.body.appendChild(flake);
+    }
+  </script>
+</body>
+</html>
